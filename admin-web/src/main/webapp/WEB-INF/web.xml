@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	version="2.5">
 
-	<display-name>JeeSite</display-name>
+	<display-name>Admin</display-name>
 
 	<!-- Context ConfigLocation -->
 	<context-param>
@@ -178,28 +178,6 @@
 		<url-pattern>/servlet/validateCodeServlet</url-pattern>
 	</servlet-mapping>
 	
-	<!-- FineReport 
-	<servlet>
-		<servlet-name>ReportServer</servlet-name>
-		<servlet-class>com.fr.web.ReportServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>ReportServer</servlet-name>
-		<url-pattern>/ReportServer</url-pattern>
-	</servlet-mapping>-->
-	
-	<!-- [INSERT FRAGMENT HERE] -->
-
-	<!-- Session configure, to "admin.properties" file "session.sessionTimeout" parameter.
-	<session-config>
-		<session-timeout>30</session-timeout>
-	</session-config>-->
-
-	<!-- Error page -->
-	<!-- <error-page>
-		<exception-type>java.lang.Throwable</exception-type>
-		<location>/WEB-INF/views/error/500.jsp</location>
-	</error-page> -->
 	<error-page>
 		<error-code>500</error-code>
 		<location>/WEB-INF/views/error/500.jsp</location>
