@@ -49,15 +49,15 @@ public class AdminWebApplication implements CommandLineRunner {
         return registration;
     }
 
-//    @Bean
-//    public ServletRegistrationBean springServlet(){
-//        ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean(new DispatcherServlet(), "/");
-//        Map<String, String> initParameters = new HashMap<>();
-//        initParameters.put("contextConfigLocation","classpath*:/spring-mvc*.xml");
-//        servletRegistrationBean.setInitParameters(initParameters);
-//        servletRegistrationBean.setLoadOnStartup(1);
-//        return servletRegistrationBean;
-//    }
+    @Bean
+    public ServletRegistrationBean springServlet(){
+        ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean(new DispatcherServlet(), "/");
+        Map<String, String> initParameters = new HashMap<>();
+        initParameters.put("contextConfigLocation","classpath*:/spring-mvc*.xml");
+        servletRegistrationBean.setInitParameters(initParameters);
+        servletRegistrationBean.setLoadOnStartup(1);
+        return servletRegistrationBean;
+    }
 
 
 

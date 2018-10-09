@@ -11,7 +11,7 @@ import org.springframework.web.servlet.view.JstlView;
  * @author: LeeJohn
  * @date: 2018/10/9 15:22
  */
-@Configuration
+//@Configuration
 public class WebConfig extends WebMvcConfigurationSupport {
     /**
      * jsp路径映射
